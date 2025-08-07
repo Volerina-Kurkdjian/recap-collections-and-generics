@@ -1,5 +1,6 @@
 import bounded.BoundedTypes;
 import bounded.Person;
+import bounded.ThirdExercise;
 
 public class Main {
 
@@ -23,6 +24,17 @@ public class Main {
         Person person=new Person(10);
         Person person1=new Person(20);
         System.out.println(boundedTypes.calculateMin(person1,person));
+
+
+        ThirdExercise thirdExercise=new ThirdExercise();
+        Integer[] numbers = {1, 5, 7, 3, 10};
+        int count = thirdExercise.countGreaterItems(numbers, 4);
+        System.out.println(count);
+
+        String[] words = {"apple", "banana", "peach", "orange"};
+        int stringCount = thirdExercise.countGreaterItems(words, "grape");
+        System.out.println(stringCount);
+
 
     }
 }
