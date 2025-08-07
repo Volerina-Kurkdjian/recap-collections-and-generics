@@ -1,3 +1,5 @@
+import bounded.BoundedTypes;
+import bounded.Person;
 
 public class Main {
 
@@ -18,6 +20,9 @@ public class Main {
         System.out.println(boundedTypes.calculateMin(1,2));
         System.out.println(boundedTypes.calculateMin("cc","bbbb"));
 
+        Person person=new Person(10);
+        Person person1=new Person(20);
+        System.out.println(boundedTypes.calculateMin(person1,person));
 
     }
 }
