@@ -2,6 +2,10 @@ import bounded.BoundedTypes;
 import bounded.Person;
 import bounded.ThirdExercise;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -36,5 +40,9 @@ public class Main {
         System.out.println(stringCount);
 
 
+        List<Integer> empty=new ArrayList<>();
+        List<Integer> fullList= Arrays.asList(numbers);
+        WildCards wildCards=new WildCards();
+        wildCards.copy(fullList,empty);
     }
 }
